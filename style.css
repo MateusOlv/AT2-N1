@@ -1,58 +1,105 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #161616;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    padding: 20px;
 }
 
 .container {
-    background-color: white;
-    border-radius: 8px;
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 20px;
-    max-width: 600px;
-    margin: auto;
+}
+
+header {
+    background-color: #d3d2d2;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+h2{
+    color: #fff;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+section.characters {
+    margin-top: 30px;
+}
+
+section.characters h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.character {
+    display: inline-block;
+    width: 45%;
+    margin: 15px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.question {
-    margin: 15px 0;
+.character img {
+    max-width: 100%;
+    border-radius: 8px;
 }
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-.resultado {
-    margin-top: 20px;
+.character h3 {
+    margin-top: 15px;
     font-size: 1.5em;
-    font-weight: bold;
 }
 
-#imagemPersonagem img {
-    max-width: 300px;
-    margin-top: 20px;
-    border-radius: 10px;
+section.quiz {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
 }
 
-.refazer-teste button {
-    background-color: #f44336;
+section.quiz h2 {
+    font-size: 2em;
+    color: black;
+}
+
+section.quiz p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #281481;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
 
-.refazer-teste button:hover {
-    background-color: #e53935;
+.btn:hover {
+    background-color: #281481dc;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+}
+
+footer p {
+    margin: 0;
 }

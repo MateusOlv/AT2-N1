@@ -6,7 +6,7 @@ function calcularPontuacao() {
         const resposta = document.querySelector(`input[name="q${i}"]:checked`);
         if (resposta) {
             pontuacao += parseInt(resposta.value);
-        }
+        } 
     }
 
     // Avaliar qual personagem com base na pontuação e associar uma imagem
@@ -16,15 +16,15 @@ function calcularPontuacao() {
     switch (true) {
         default:
             personagem = 'Arthen, o Aventureiro';
-            imagemPersonagem = 'Imagens/Aventureiro.jpg';
+            imagemPersonagem = '../Imagens/Aventureiro.jpg';
             break;
         case (pontuacao == 10):
             personagem = 'Kael, o Destemido';
-            imagemPersonagem = 'Imagens/Destemido.jpg'; 
+            imagemPersonagem = '../Imagens/Destemido.jpg'; 
             break;
         case (pontuacao == 20):
             personagem = 'Eldor, o Sábio';
-            imagemPersonagem = 'Imagens/Sábio.jpg'; 
+            imagemPersonagem = '../Imagens/Sábio.jpg'; 
             break;
     }
 
@@ -46,6 +46,5 @@ function calcularPontuacao() {
 }
 
 function refazerTeste() {
-    // Recarregar a página para refazer o teste
-    location.reload();
+     window.location.href = '../index.html'
 }
