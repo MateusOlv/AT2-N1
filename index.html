@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Personagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Qual personagem você seria?</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. Você prefere aventura ou relaxar?</p>
+                <input type="radio" name="q1" value="1"> Aventura<br>
+                <input type="radio" name="q1" value="2"> Relaxar<br>
+            </div>
+            
+            <div class="question">
+                <p>2. Você gosta mais de dia ou noite?</p>
+                <input type="radio" name="q2" value="1"> Dia<br>
+                <input type="radio" name="q2" value="2"> Noite<br>
+            </div>
+
+            <!-- Adicione mais perguntas no mesmo formato -->
+            
+            <div class="question">
+                <p>3. Você prefere gatos ou cachorros?</p>
+                <input type="radio" name="q3" value="1"> Gatos<br>
+                <input type="radio" name="q3" value="2"> Cachorros<br>
+            </div>
+
+            <!-- Continue até 10 perguntas -->
+
+            <button type="button" onclick="calcularPontuacao()">Enviar</button>
+        </form>
+
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
