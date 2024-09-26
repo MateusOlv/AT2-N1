@@ -14,21 +14,17 @@ function calcularPontuacao() {
     let imagemPersonagem = '';
 
     switch (true) {
-        case (pontuacao <= 10):
-            personagem = 'Arthen - O Aventureiro';
-            imagemPersonagem = 'Imagens/Aventureiro.jpg'; // Substitua pelo caminho real da imagem
-            break;
-        case (pontuacao <= 15):
-            personagem = 'Eldor - O Pensador';
-            imagemPersonagem = 'Imagens/Sábio.jpg'; // Substitua pelo caminho real da imagem
-            break;
-        case (pontuacao <= 20):
-            personagem = 'Kael - O Destemido';
-            imagemPersonagem = 'Imagens/Destemido.jpg'; // Substitua pelo caminho real da imagem
-            break;
         default:
-            personagem = 'Lyra - O Criativo';
-            imagemPersonagem = 'Imagens/Criativo.jpg'; // Substitua pelo caminho real da imagem
+            personagem = 'Arthen, o Aventureiro';
+            imagemPersonagem = 'Imagens/Aventureiro.jpg';
+            break;
+        case (pontuacao == 10):
+            personagem = 'Kael, o Destemido';
+            imagemPersonagem = 'Imagens/Destemido.jpg'; 
+            break;
+        case (pontuacao == 20):
+            personagem = 'Eldor, o Sábio';
+            imagemPersonagem = 'Imagens/Sábio.jpg'; 
             break;
     }
 
@@ -43,4 +39,13 @@ function calcularPontuacao() {
     // Exibir a imagem correspondente ao personagem
     const imagemDiv = document.getElementById('imagemPersonagem');
     imagemDiv.innerHTML = `<img src="${imagemPersonagem}" alt="${personagem}">`;
+
+    // Adicionar o botão de refazer o teste
+    const refazerDiv = document.getElementById('refazerTeste');
+    refazerDiv.innerHTML = `<button onclick="refazerTeste()">Refazer o Teste</button>`;
+}
+
+function refazerTeste() {
+    // Recarregar a página para refazer o teste
+    location.reload();
 }
